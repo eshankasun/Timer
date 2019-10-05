@@ -18,11 +18,12 @@ stop_btn.addEventListener("click", function() {
   timer = clearInterval(timer);
   reset_btn.disabled = false;
   stop_btn.disabled = true;
+  start_btn.disabled = false;
 });
 
 reset_btn.addEventListener("click", function() {
   timer = clearInterval(timer);
-  reset_btn.disabled = true;
+  reset_btn.disabled = false;
   sec = 0;
   min = 0;
   hour = 0;
